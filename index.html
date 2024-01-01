@@ -1,0 +1,904 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jathusiya</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    {% comment %} <link rel="stylesheet" href="style.css"> {% endcomment %}
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo"><span>J</span>athusiya</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right-header">
+            <a href="#" class="btn">Let's chat <i class='bx bx-message-dots' ></i></a>
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h3>Welcome To my World</h3>
+            <h1>Hi I'm Jathusiya Patkunaseelan</h1>
+
+            <div class="text-animate">
+                <h2>Software Engineer</h2>
+            </div>
+
+            <p>Seeking a challenging and responsible position in a dynamic company, where I can utilize my extensive professional qualifications to drive the progress and success of the organization. I am highly motivated to stay updated with the latest technologies and industry trends, as it is integral to advancing my career. With a strong commitment to professional growth and a passion for excellence, I am dedicated to making significant contributions to the organization's goals and objectives.</p>
+                  <div class="btn-box">
+                <a href="mailto:jathuseelan96@gmail.com" class="btn">Hire Me Now ! <i class='bx bx-right-arrow-alt' ></i></a>
+                <a href="{% static "pdf/JathusiyaPatkunaseelan.pdf" %}" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+
+            <div class="social-media">
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://github.com/jathusiya"><i class='bx bxl-github'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="www.linkedin.com/in/jathusiya-patkunaseelan-1aa62a165"><i class='bx bxl-linkedin'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="img-hero">
+            <img src="{%static 'images/img1.jpg'%}" alt="">
+            <div class="rotate-text">
+                <div class="text">
+                    <p>I'm Fresher</p>
+                </div>
+                <span><i></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <video controls autoplay loop style="height:100%" class="aboutHero"> 
+                <source src="{% static 'videos/hack1.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            {% comment %} <img src="{%static 'images/img.jpg'%}" alt="" class="aboutHero"> {% endcomment %}
+            <div class="showcase-ring">
+                <img src="{%static 'shapes/ring.png'%}" class="ring">
+                <img src="{%static 'shapes/circle.png'%}" class="circle">
+            </div>
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <h3>Fresher</h3>
+            <p>
+                I am writing to express my strong interest in the Software Engineer position. As a recent graduate with a BSc (Hons) in Computing and Information Systems 
+                Sabaragamuwa university of Sri Lanka, I am excited about the opportunity to launch my career and contribute to a dynamic and innovative team like yours.
+                During my academic journey, I have cultivated a deep passion for software engineering and have acquired a solid foundation in computer science principles, programming languages, and software development methodologies. My coursework has equipped me with the knowledge and skills necessary to excel in a software engineering role, and I am eager to apply my abilities to real-world projects.</p>
+                
+                <div class="about-btn">
+                <button class="active">Education</button>
+                <button>Internship</button>
+                <button>Awards</button>
+                
+            </div>
+            <div class="content-btn">
+
+               <!--Education-->
+                <div class="content">
+                <div class="text-box">
+                    <p>University Education</p>
+                    <span><b>BSc (Hons) in Computing and Information Systems</b> ||Faculty of Computing, Sabaragamuwa university of Sri Lanka (Sep 2017 - Dec 2022)</span>
+                </div>
+                
+                <div class="text-box">
+                    <p>Online Courses</p>
+                    <span> </span>
+                </div>
+                </div>
+
+                <!--Internship-->
+                <div class="content">
+                    <div class="text-box">
+                        <p>Software Engineer Internship at Samuel Ganam IT center (January 2021 - June 2021)</p>
+                        <span><b>Worked on Defect Tracker System </b>for Invicta Innovations (PV) Ltd, as a software developer (Spring Boot) (Code excellence and collaborative learning., architected and executed RESTful APIs, engaged actively in daily stand-up meetings, played a pivotal role in refining agile development processes, enhancing project timely delivery efficiency.) </span></br>
+                        <span><b>Worked on Tokyo Vehicles Management System</b> as a Quality Assurance Engineer. (Software Testing, API Testing, teamwork and communication skills ,Problem-Solving, Test Case Design, Quality Assurance Methodologies)</span>
+                    </div>
+                </div>
+
+                 <!--Awards-->
+                 <div class="content">
+                    <div class="text-box">
+                        <p>Participated in code Night Hackathon v3.0 2019(3rd place)</p>
+                        <span>University Inner comptition-group</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Participated in the virtual mini-hackathon HomeAlone 2020</p>
+                        <span>All Country Level </span>
+                    </div>
+                    <div class="text-box">
+                        <p>Participated in port city Colombo ideathon 2021 & AIESEC Sri Lanka (3rd place)</p>
+                        <span>AIESEC Sri Lanka-group</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cvContent">
+                <a href="{% static "pdf/JathusiyaPatkunaseelan.pdf" %}" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--project section-->
+
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2 class="heading">My Projects</h2>
+            <span>what i done </span>
+        </div>
+
+        <div class="allServices">
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-layer' ></i>
+                    <span></span>
+                </div>
+                <h3>Web Development</h3>
+                <p>Web development for Universitiy Projects && also Personal Projects</p> 
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-alt' ></i>
+                    <span></span>
+                </div>
+                <h3>Research</h3>
+                <p>University Final Research Using deep learning</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-desktop' ></i>
+                    <span></span>
+                </div>
+                <h3>Skill Development Pratices</h3>
+                <p>different programming languages and framework use to Projects</p> 
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+        </div>
+
+        <div class="showcase">
+            <img src="{%static 'shapes/ring.png.png'%}" class="ring">
+            <img src="{%static 'shapes/circle.png'%}" class="circle">
+            <img src="{%static 'shapes/circle.png'%}" class="circle2">
+            <img src="{%static 'shapes/circle.png'%}" class="circle3">
+            <img src="{%static 'shapes/half-ring.png'%}" class="half-ring">
+        </div>
+    </section>
+
+    <!--All Project Section-->
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2 class="heading">Projects </h2>
+            <span>You can get code in github</span>
+        </div>
+        <div class="fillter-buttons">
+            <button class="button mixitup-control-active" data-filter="all">All</button>
+            <button class="button" data-filter=".java">Java ||  Spring boot framework</button>
+            <button class="button" data-filter=".mechine">MechineLearning || DeepLearning</button>
+            <button class="button" data-filter=".python">Python || Django Framwork</button>
+            <button class="button" data-filter=".php">PHP || Laravel Framwork</button>
+            <button class="button" data-filter=".html">HTML || CSS || JS</button>
+        </div>
+
+        <div class="portfolio-gallery">
+            <div class="portfolio-box mix php">
+                <div class="portfolio-content">
+                    <h3>online-building-material-ordering-system</h3>
+                    <p>laravel-7.x framework, Bootstrap, CSS, HTML) (GitHub: https://github.com/jathusiya/online-building-material-ordering-system.git(github.com)) – This project includes user (login, register, checkout, home, categories, mail for confirm) and admin panel (login, View orders, sent mail, update or edit product details) with validation.</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/build.jpg'%}" alt="">
+                </div>
+            </div>
+            <div class="portfolio-box mix php">
+                <div class="portfolio-content">
+                    <h3>Product Management system</h3>
+                    <p>laravel framework, Bootstrap, CSS, HTML. (GitHub: https://github.com/jathusiya/Jathusiya-ProductManagement-Laravel.git (github.com)) ,This project includes user (login, register, basic CURD operation )</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/product.jpg'%}"  alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix java">
+                <div class="portfolio-content">
+                    <h3>Student Management System</h3>
+                    <p>Using Spring boot framework, Bootstrap, CSS, HTML (GitHub: https://github.com/jathusiya/StudentManagementSystem.git (github.com)) , This project includes user (login, register, basic CURD operation </p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/student.jpg'%}"  alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix python">
+                <div class="portfolio-content">
+                    <h3>E-commerce website</h3>
+                    <p>Using Django framework, Bootstrap, CSS, HTML,js (GitHub: https://github.com/jathusiya/python-Django-e-commerce.git (github.com)) , This project includes Product, cart, collection. login, Register Validation.</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/edjango.jpg'%}" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix python">
+                <div class="portfolio-content">
+                    <h3>Award Management</h3>
+                    <p>Using Django framework, Bootstrap, CSS, HTML,js (GitHub: https://github.com/jathusiya/Award-Management-Django-Jathusiya.git (github.com)) , This project includes user Login, Registration, email validation/confirmation,different tables for award management and table conjection . </p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/Award.jpg'%}" alt="">
+                </div>
+            </div>
+
+
+            <div class="portfolio-box mix html">
+                <div class="portfolio-content">
+                    <h3>Pizza Ordering Systems</h3>
+                    <p>Frontend using HTML, css, Js.  (GitHub: https://github.com/jathusiya/PIzza-New.git (github.com))</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/pizza.jpg'%}"alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix html">
+                <div class="portfolio-content">
+                    <h3>Business Consulting Systems</h3>
+                    <p>Frontend using HTML, css, Js.  (GitHub: https://github.com/jathusiya/Business-Consulting.git(github.com))</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/bussiness.jpg'%}" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix mechine">
+                <div class="portfolio-content">
+                    <h3>Email Spam Detection</h3>
+                    <p>Use jupyter notebook ,kaggle dataset for Pratice (GitHub: https://github.com/jathusiya/Business-Consulting.git(github.com))</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/email.jpg'%}" alt="">
+                </div>
+            </div>
+          
+            <div class="portfolio-box mix mechine">
+                <div class="portfolio-content">
+                    <h3>Car Brand Detection </h3>
+                    <p>Use jupyter notebook ,kaggle dataset for Pratice (GitHub: https://github.com/jathusiya/Mechinelearning.git(github.com))</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/car.jpg'%}" alt="">
+                </div>
+            </div>
+            <div class="portfolio-box mix mechine">
+                <div class="portfolio-content">
+                    <h3>Tranfer Learning Model/Plant disease detection</h3>
+                    <p>Use Goole colab ,kaggle dataset for Pratice (GitHub: https://github.com/jathusiya/Tranferlearning.git (github.com))</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/plant.jpg'%}" alt="">
+                </div>
+            </div>
+            <div class="portfolio-box mix mechine">
+                <div class="portfolio-content">
+                    <h3>HR -Data Analysis</h3>
+                    <p>PowerBI , real dataset from codebasic for Pratice (GitHub: https://github.com/jathusiya/DataAnalysis-PowerBI.git (github.com))</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="{%static 'images/data.jpg'%}" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Skills section-->
+      <section class="down-box" id="blog">           
+            <div class="skills">
+                <div class="container">
+                    <div class="skillBox">
+                        <div class="main-text">
+                            <h2 class="heading">My Skills</h2>
+                            <span>Programming Languages</span>
+                        </div>
+                        <div class="skill-wrap">
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="80">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Python
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="50">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                   C
+                                </div>
+                            </div>
+
+                            
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="75">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    PHP
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="80">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Java
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skills section-->//
+    <section class="down-box" id="blog">           
+        <div class="skills">
+            <div class="container">
+                <div class="skillBox">
+                    <div class="main-text">
+                        <h2 class="heading">My Skills</h2>
+                        <span>Web Technologies && Database</span>
+                    </div>
+                    <div class="skill-wrap">
+                        <div class="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                            <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                   </svg>
+                                   <h2 class="counter">
+                                    <span data-target="89">0</span>%
+                                   </h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">
+                                HTML
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                            <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                   </svg>
+                                   <h2 class="counter">
+                                    <span data-target="70">0</span>%
+                                   </h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">
+                                CSS
+                            </div>
+                        </div>
+
+
+                        <div class="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                            <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                   </svg>
+                                   <h2 class="counter">
+                                    <span data-target="70">0</span>%
+                                   </h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">
+                                JavaScript
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                            <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                   </svg>
+                                   <h2 class="counter">
+                                    <span data-target="70">0</span>%
+                                   </h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">
+                                Mysql
+                            </div>
+                        </div>
+                        
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--skill section-->
+<section class="blog" id="blog">
+    <div class="main-text">
+        <h2 class="heading">skills</h2>
+        <span>Others</span>
+    </div>
+
+    <div class="blog-box swiper mySwiper">
+        <div class="cards swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="card-top">
+                    <img src="{% static "images/1s.jpg" %}" alt="">
+                </div>
+                <div class="card-info">
+                    <ul class="list-group">
+                        <li class="list-group-item">Machine learning, Deep Learning, TensorFlow, Keras</li>
+                        <li class="list-group-item">Operating Systems: Linux</li>
+                        <li class="list-group-item">Version Control: Git</li>
+                        <li class="list-group-item">Others: Data Preprocessing, Data Visualization, Data Analysis</li>
+                        <li class="list-group-item">Others: LaTeX, MSOffice, Excel</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="card-top">
+                    <img src="{% static "images/3s.jpg" %}" alt="">
+                </div>
+                <div class="card-info">
+                    <ul class="list-group">
+                        <li class="list-group-item">PyCharm</li>
+                        <li class="list-group-item">Google Colab</li>
+                        <li class="list-group-item">jupyter notebook</li>
+                        <li class="list-group-item">MySQL Work bench</li>
+                        <li class="list-group-item">MS Office, Excel</li>
+                        <li class="list-group-item">Postman</li>
+                        <li class="list-group-item">Visual Studio Code</li>
+                        <li class="list-group-item">Eclipse IDE</li>
+                        <li class="list-group-item">XAMPP</li>
+                        <li class="list-group-item">NetBeans</li>
+                      </ul>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-top">
+                    <img src="{% static "images/2s.jpg" %}" alt="">
+                </div>
+                <div class="card-info">
+                    <ul class="list-group">
+                        <li class="list-group-item">Laravel</li>
+                        <li class="list-group-item">Java-Spring Boot</li>
+                        <li class="list-group-item">Bootstrap</li>
+                        <li class="list-group-item">Django</li>
+                        <li class="list-group-item">MySQL</li>
+                        <li class="list-group-item">Mongo DB</li>
+                        <li class="list-group-item">SQL</li>
+                      </ul>
+                </div>
+            </div>
+
+
+            <div class="card swiper-slide">
+                <div class="card-top">
+                    <img src="{% static "images/4s.jpg" %}" alt="">
+                </div>
+                <div class="card-info">
+                    <ul class="list-group">
+                        <li class="list-group-item">Teamwork</li>
+                        <li class="list-group-item">Time Management</li>
+                        <li class="list-group-item">Leadership</li>
+                        <li class="list-group-item">Collaboration</li>
+                        <li class="list-group-item">Project Management</li>
+                        <li class="list-group-item">Communication</li>
+                        <li class="list-group-item">Problem-Solving</li>
+                        <li class="list-group-item">Adaptability</li>
+                        <li class="list-group-item">Continuous Learning</li>
+                        <li class="list-group-item">Self-Initiative</li>
+                      </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="showcase">
+        <img src="{% static "shapes/ring.png" %}" class="ring">
+        <img src="{% static "shapes/second-circle.png" %}" class="second-circle">
+        <img src="{% static "shapes/circle.png" %}" class="circle">
+        <img src="{% static "shapes/half-ring.png" %}" class="half-ring">
+    </div>
+</section>
+
+    <!--Contact section-->
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Contact Me</h2>
+                    <span>get in touch with me</span>
+                </div>
+                <form action="/contact" method="post">
+                    {% csrf_token %}
+                    <input type="text"  name="name" placeholder="First Name">
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="content"  cols="30" rows="10" placeholder="Message">
+                    </textarea>
+                    <div class="formBtn">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card" style="width: 50%;background: var(--gradient-white-bg2);
+            box-shadow: rgba(0,0,0,0.18)0px 2px 4px;">
+                    <h2 class="heading" style="text-align:center;">Introduce My self</h2>
+            <video controls autoplay loop style="width: 98%; height:80%; margin-top:4px;">
+              <source src="{% static 'videos/hack.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2023 by <span>Pars Coder</span> || All Right Reservd.</p>
+    </footer>
+
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up' ></i>
+        </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script>
+        // active hamburger menu 
+let menuIcon = document.querySelector(".menu-icon");
+let navlist = document.querySelector(".navlist")
+menuIcon.addEventListener("click",()=>{
+    menuIcon.classList.toggle("active");
+    navlist.classList.toggle("active");
+    document.body.classList.toggle("open");
+});
+
+// remove navlist
+navlist.addEventListener("click",()=>{
+    navlist.classList.remove("active");
+    menuIcon.classList.remove("active");
+    document.body.classList.remove("open");
+})
+
+
+
+// rotate text js code 
+let text = document.querySelector(".text p");
+
+text.innerHTML = text.innerHTML.split("").map((char,i)=>
+    `<b style="transform:rotate(${i * 6.3}deg")>${char}</b>`
+).join("");
+
+
+// switch between about buttons 
+
+const buttons = document.querySelectorAll('.about-btn button');
+const contents = document.querySelectorAll('.content');
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    contents.forEach(content => content.style.display = 'none');
+    contents[index].style.display = 'block';
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+});
+
+
+
+// portfolio fillter 
+
+var mixer = mixitup('.portfolio-gallery',{
+    selectors: {
+        target: '.portfolio-box'
+    },
+    animation: {
+        duration: 500
+    }
+});
+
+
+// Initialize swiperjs 
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+
+    breakpoints: {
+        576:{
+            slidesPerView:2,
+            spaceBetween:10,
+        },
+        1200:{
+            slidesPerView:3,
+            spaceBetween:20,
+        },
+    }
+  });
+
+
+
+//   skill Progress bar 
+
+const first_skill = document.querySelector(".skill:first-child");
+const sk_counters = document.querySelectorAll(".counter span");
+const progress_bars = document.querySelectorAll(".skills svg circle");
+
+window.addEventListener("scroll",()=>{
+    if(!skillsPlayed)
+    skillsCounter();
+})
+
+
+function hasReached(el){
+    let topPosition = el.getBoundingClientRect().top;
+    if(window.innerHeight >= topPosition + el.offsetHeight)return true;
+    return false;
+}
+
+function updateCount(num,maxNum){
+    let currentNum = +num.innerText;
+    
+    if(currentNum < maxNum){
+        num.innerText = currentNum + 1;
+        setTimeout(()=>{
+            updateCount(num,maxNum)
+        },12)
+    }
+}
+
+
+let skillsPlayed = false;
+
+function skillsCounter(){
+    if(!hasReached(first_skill))return;
+    skillsPlayed = true;
+    sk_counters.forEach((counter,i)=>{
+        let target = +counter.dataset.target;
+        let strokeValue = 465 - 465 * (target / 100);
+
+        progress_bars[i].style.setProperty("--target",strokeValue);
+
+        setTimeout(()=>{
+            updateCount(counter,target);
+        },400)
+    });
+
+    progress_bars.forEach(p => p.style.animation = "progress 2s ease-in-out forwards");
+}
+
+
+// side progress bar 
+
+let calcScrollValue = ()=>{
+    let scrollProgress = document.getElementById("progress");
+    let pos = document.documentElement.scrollTop;
+
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100)/calcHeight);
+    
+    if(pos > 100){
+        scrollProgress.style.display = "grid";
+    }else{
+        scrollProgress.style.display = "none";
+    }
+
+    scrollProgress.addEventListener("click",()=>{
+        document.documentElement.scrollTop = 0;
+    });
+
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#e6006d ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+
+// active menu 
+
+let menuLi = document.querySelectorAll("header ul li a");
+let section = document.querySelectorAll('section');
+
+function activeMenu(){
+    let len = section.length;
+    while(--len && window.scrollY + 97 < section[len].offsetTop){}
+    menuLi.forEach(sec => sec.classList.remove("active"));
+    menuLi[len].classList.add("active");
+}
+activeMenu();
+window.addEventListener("scroll",activeMenu);
+
+// scroll reveal
+
+ScrollReveal({ 
+    distance:"90px",
+    duration:2000,
+    delay:200,
+    // reset: true ,
+});
+
+
+ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', { origin: "top" });
+ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "left" });
+ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
+ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
+
+
+    </script>
+
+</body>
+</html>
